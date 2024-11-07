@@ -92,7 +92,7 @@ nav a:hover {
 .content-section.reverse {
     flex-direction: row-reverse;
 }
-button { text-decoration: none !important;
+button a { text-decoration: none !important;
 }
 
 .text-block {
