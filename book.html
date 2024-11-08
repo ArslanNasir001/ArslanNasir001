@@ -150,33 +150,41 @@
     <!-- Consultation Form Container -->
     <div class="container" data-aos="fade-up">
         <h2>Consultation Form</h2>
-        <form id="consultationForm">
-            <label for="fullName" data-aos="fade-left" data-aos-delay="100">Full Name:</label>
-            <input type="text" id="fullName" placeholder="Enter your full name" required data-aos="zoom-in" data-aos-delay="200">
+        <form id="consultationForm" action="https://formspree.io/f/mdkogyap" method="POST">
+    <!-- Full Name -->
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
 
-            <label for="email" data-aos="fade-left" data-aos-delay="300">Email Address:</label>
-            <input type="email" id="email" placeholder="Enter your email" required data-aos="zoom-in" data-aos-delay="400">
+    <!-- Email Address -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="phone" data-aos="fade-left" data-aos-delay="500">Phone Number:</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number" required data-aos="zoom-in" data-aos-delay="600">
+    <!-- Phone Number -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-            <label for="eventType" data-aos="fade-left" data-aos-delay="500">Event Type:</label>
-            <select id="eventType" data-aos="zoom-in" data-aos-delay="500">
-                <option value="corporate">Corporate Event</option>
-                <option value="wedding">Wedding</option>
-                <option value="birthday">Birthday Party</option>
-                <option value="charity">Charity Event</option>
-                <option value="conference">Conference</option>
-            </select>
+    <!-- Event Type -->
+    <label for="eventType">Event Type:</label>
+    <select id="eventType" name="eventType">
+        <option value="corporate">Corporate Event</option>
+        <option value="wedding">Wedding</option>
+        <option value="birthday">Birthday Party</option>
+        <option value="charity">Charity Event</option>
+        <option value="conference">Conference</option>
+    </select>
 
-            <label for="date" data-aos="fade-left" data-aos-delay="550">Preferred Date:</label>
-            <input type="date" id="date" required data-aos="zoom-in" data-aos-delay="1000">
+    <!-- Preferred Date -->
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required>
 
-            <label for="details" data-aos="fade-left" data-aos-delay="600">Additional Details:</label>
-            <textarea id="details" rows="4" placeholder="Provide any specific details about the event" data-aos="zoom-in" data-aos-delay="1200"></textarea>
+    <!-- Additional Details -->
+    <label for="details">Additional Details:</label>
+    <textarea id="details" name="details" rows="4" placeholder="Provide any specific details about the event"></textarea>
 
-            <button type="submit" data-aos="flip-left" data-aos-delay="700">Book Now</button>
-        </form>
+    <!-- Submit Button -->
+    <button type="submit">Book Now</button>
+</form>
+
     </div>
 
     <!-- Footer Section -->
@@ -201,7 +209,7 @@
             <!-- Contact Info -->
             <div style="font-size: 0.9rem; color: #ccc; margin-top: 10px;">
                 <p>&copy; 2024 EventMaster. All rights reserved.</p>
-                <p>000 Event Master, Hafizabad, Pakistan | Phone: (000) 000-0000 | Email: info@eventmaster.com</p>
+                <p>34 Farnell road Yagoona 2199 NSW | Phone: (000) 000-0000 | Email: info@eventmaster.com</p>
             </div>
         </div>
     </footer>
