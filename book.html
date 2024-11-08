@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Consultation</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <style>
         /* Basic Reset */
         * {
@@ -128,39 +129,39 @@
 <body>
 
     <!-- Header Section -->
-    <header>
+    <header data-aos="fade-down">
         <div class="logo">EventMaster</div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calculate.html">Event Calculator</a></li>
-                <li><a href="book.html">Book a Consultation</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html" data-aos="fade-up" data-aos-delay="100">Home</a></li>
+                <li><a href="calculate.html" data-aos="fade-up" data-aos-delay="200">Event Calculator</a></li>
+                <li><a href="book.html" data-aos="fade-up" data-aos-delay="300">Book a Consultation</a></li>
+                <li><a href="about.html" data-aos="fade-up" data-aos-delay="400">About Us</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-in">
         <h1>Book a Consultation</h1>
         <p>Let our experts help you plan the perfect event. Fill out the form below to book a consultation with us.</p>
     </section>
 
     <!-- Consultation Form Container -->
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h2>Consultation Form</h2>
         <form id="consultationForm">
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" placeholder="Enter your full name" required>
+            <label for="fullName" data-aos="fade-left" data-aos-delay="100">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required data-aos="zoom-in" data-aos-delay="200">
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="email" data-aos="fade-left" data-aos-delay="300">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email" required data-aos="zoom-in" data-aos-delay="400">
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <label for="phone" data-aos="fade-left" data-aos-delay="500">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required data-aos="zoom-in" data-aos-delay="600">
 
-            <label for="eventType">Event Type:</label>
-            <select id="eventType">
+            <label for="eventType" data-aos="fade-left" data-aos-delay="500">Event Type:</label>
+            <select id="eventType" data-aos="zoom-in" data-aos-delay="500">
                 <option value="corporate">Corporate Event</option>
                 <option value="wedding">Wedding</option>
                 <option value="birthday">Birthday Party</option>
@@ -168,37 +169,52 @@
                 <option value="conference">Conference</option>
             </select>
 
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" required>
+            <label for="date" data-aos="fade-left" data-aos-delay="550">Preferred Date:</label>
+            <input type="date" id="date" required data-aos="zoom-in" data-aos-delay="1000">
 
-            <label for="details">Additional Details:</label>
-            <textarea id="details" rows="4" placeholder="Provide any specific details about the event"></textarea>
+            <label for="details" data-aos="fade-left" data-aos-delay="600">Additional Details:</label>
+            <textarea id="details" rows="4" placeholder="Provide any specific details about the event" data-aos="zoom-in" data-aos-delay="1200"></textarea>
 
-            <button type="submit">Book Now</button>
+            <button type="submit" data-aos="flip-left" data-aos-delay="700">Book Now</button>
         </form>
     </div>
-<footer style="background-color: #343a40; color: white; padding: 20px 0; text-align: center; margin-top: 30px;">
-    <div style="max-width: 800px; margin: auto; display: flex; flex-direction: column; align-items: center;">
-        <!-- Social Media Links -->
-        <div style="margin-bottom: 15px;">
-            <a href="https://facebook.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Facebook</a>
-            <a href="https://twitter.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Twitter</a>
-            <a href="https://instagram.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Instagram</a>
-            <a href="https://linkedin.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">LinkedIn</a>
-        </div>
 
-        <!-- Quick Links -->
-         <a href="index.html" style="color: white; text-decoration: none;">Home</a>
-            <a href="calculate.html" style="color: white; text-decoration: none;">Event Calculator</a>
-            <a href="about.html" style="color: white; text-decoration: none;">About Us</a>
-            <a href="book.html" style="color: white; text-decoration: none;">Book Consultation</a>
+    <!-- Footer Section -->
+    <footer style="background-color: #343a40; color: white; padding: 20px 0; text-align: center; margin-top: 30px;" data-aos="fade-up">
+        <div style="max-width: 800px; margin: auto; display: flex; flex-direction: column; align-items: center;">
+            <!-- Social Media Links -->
+            <div style="margin-bottom: 15px;">
+                <a href="https://facebook.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Facebook</a>
+                <a href="https://twitter.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Twitter</a>
+                <a href="https://instagram.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">Instagram</a>
+                <a href="https://linkedin.com" style="color: #00b4d8; margin: 0 10px; text-decoration: none;">LinkedIn</a>
+            </div>
 
-        <!-- Contact Info -->
-        <div style="font-size: 0.9rem; color: #ccc; margin-top: 10px;">
-            <p>&copy; 2024 EventMaster. All rights reserved.</p>
-            <p>000 Event Master, Hafizabad, Pakistan | Phone: (000) 000-0000 | Email: info@eventmaster.com</p>
+            <!-- Quick Links -->
+            <div style="display: flex; gap: 15px; margin-bottom: 10px; flex-wrap: wrap; justify-content: center;">
+                <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+                <a href="calculate.html" style="color: white; text-decoration: none;">Event Calculator</a>
+                <a href="about.html" style="color: white; text-decoration: none;">About Us</a>
+                <a href="book.html" style="color: white; text-decoration: none;">Book Consultation</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="font-size: 0.9rem; color: #ccc; margin-top: 10px;">
+                <p>&copy; 2024 EventMaster. All rights reserved.</p>
+                <p>000 Event Master, Hafizabad, Pakistan | Phone: (000) 000-0000 | Email: info@eventmaster.com</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS library
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            once: true, // Animation happens only once
+            offset: 80 // Trigger animation after scrolling 200px
+        });
+    </script>
 </body>
 </html>
